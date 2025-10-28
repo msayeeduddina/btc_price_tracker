@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+        <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+        <div id="plotly-html-element" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+
+        <script type="module">
+            const graph_div = document.getElementById("plotly-html-element");
+            await Plotly.newPlot(graph_div, {
+  "data": [
+    {
+      "type": "scatter",
+      "name": "BTC/Beef (per lb)",
+      "mode": "lines",
+      "x": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "y": [
+        25270.474821516134,
+        25772.011707983318,
+        27188.479813987356,
+        24445.359766017387,
+        23299.14285562209
+      ]
+    },
+    {
+      "type": "scatter",
+      "name": "BTC/Gold (per oz)",
+      "mode": "lines",
+      "x": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "y": [
+        54.214298889654295,
+        54.18807916241684,
+        54.81780560470407,
+        53.67088847223241,
+        53.76997858114986
+      ]
+    },
+    {
+      "type": "scatter",
+      "name": "BTC/Wheat (per bushel)",
+      "mode": "lines",
+      "x": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "y": [
+        15140.108577569259,
+        15964.37713247897,
+        15905.978467672927,
+        15221.286097631555,
+        15640.89093737012
+      ]
+    },
+    {
+      "type": "scatter",
+      "name": "BTC/Corn (per bushel)",
+      "mode": "lines",
+      "x": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "y": [
+        18018.28459611653,
+        18017.166656209945,
+        16120.565158476607,
+        18203.345685318436,
+        17129.599082118024
+      ]
+    }
+  ],
+  "layout": {
+    "title": {
+      "text": "Bitcoin vs Commodities Price Comparison"
+    },
+    "showlegend": true,
+    "width": 1200,
+    "height": 800,
+    "xaxis": {
+      "title": {
+        "text": "Time"
+      }
+    },
+    "yaxis": {
+      "title": {
+        "text": "BTC/Asset Ratio"
+      }
+    }
+  },
+  "config": {}
+});
+        </script>
+    </div>
+</body>
+
+</html>

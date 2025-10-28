@@ -1,0 +1,48 @@
+[package]
+name = "asset_price_watcher"
+version = "0.1.0"
+edition = "2021"
+default-run = "asset_price_watcher"
+
+[dependencies]
+tokio = { version = "1.40", features = ["full"] }
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+eframe = "0.27"
+egui = "0.27"
+egui_plot = "0.27"
+chrono = { version = "0.4", features = ["serde"] }
+anyhow = "1.0"
+dotenv = "0.15"
+async-trait = "0.1"
+rand = "0.8"
+yahoo_finance_api = "2.2"
+
+[[bin]]
+name = "test_cad"
+path = "src/bin/test_cad.rs"
+
+[[bin]]
+name = "test_simple"
+path = "src/bin/test_simple.rs"
+
+[[bin]]
+name = "test_http"
+path = "src/bin/test_http.rs"
+
+[[bin]]
+name = "test_integration"
+path = "src/bin/test_integration.rs"
+
+[[bin]]
+name = "test_history"
+path = "src/bin/test_history.rs"
+
+[[bin]]
+name = "test_full_range"
+path = "src/bin/test_full_range.rs"
+
+[[bin]]
+name = "test_coindesk"
+path = "src/bin/test_coindesk.rs"

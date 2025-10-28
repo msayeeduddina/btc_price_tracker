@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+        <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+        <div id="plotly-html-element" class="plotly-graph-div" style="height:100%; width:100%;"></div>
+
+        <script type="module">
+            const graph_div = document.getElementById("plotly-html-element");
+            await Plotly.newPlot(graph_div, {
+  "data": [
+    {
+      "type": "scatter",
+      "name": "Gold (per oz)",
+      "mode": "lines",
+      "x": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "y": [
+        2069.87828484884,
+        2070.972098192284,
+        2047.1815455226817,
+        2090.574670811537,
+        2086.722051240225
+      ]
+    },
+    {
+      "type": "scatter",
+      "name": "Beef (per lb)",
+      "mode": "lines",
+      "x": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "y": [
+        4.440636782354982,
+        4.354413666715716,
+        4.127556993542036,
+        4.589950856684815,
+        4.815756557882359
+      ]
+    },
+    {
+      "type": "scatter",
+      "name": "Wheat (per bushel)",
+      "mode": "lines",
+      "x": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "y": [
+        7.411901930891992,
+        7.029525741514101,
+        7.055334585550855,
+        7.371453324003869,
+        7.173696207542634
+      ]
+    },
+    {
+      "type": "scatter",
+      "name": "Bitcoin",
+      "mode": "lines",
+      "x": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "y": [
+        112217.0,
+        112222.0,
+        112222.0,
+        112203.0,
+        112203.0
+      ]
+    },
+    {
+      "type": "scatter",
+      "name": "Corn (per bushel)",
+      "mode": "lines",
+      "x": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "y": [
+        6.227951356933615,
+        6.228615305687958,
+        6.961418467453096,
+        6.163866903351464,
+        6.550240870326689
+      ]
+    }
+  ],
+  "layout": {
+    "title": {
+      "text": "Asset Prices in USD"
+    },
+    "showlegend": true,
+    "width": 1200,
+    "height": 800,
+    "xaxis": {
+      "title": {
+        "text": "Time"
+      }
+    },
+    "yaxis": {
+      "title": {
+        "text": "Price ($)"
+      }
+    }
+  },
+  "config": {}
+});
+        </script>
+    </div>
+</body>
+
+</html>
